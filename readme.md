@@ -1,7 +1,6 @@
 # This app created to test phyton code on kivy launcher
-```
-This Repo take source on [DENICZ](https://www.youtube.com/watch?v=pzsvN3fuBA0).
-```
+## This Repo take source on [DENICZ](https://www.youtube.com/watch?v=pzsvN3fuBA0).
+
 ### Lib Requirements :
 1. kivy 2.1.0
 2. kivy_deps.gstreamer 0.3.3 (optional)

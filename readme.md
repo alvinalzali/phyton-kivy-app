@@ -7,7 +7,7 @@
 
 ### This app can be deployed to apk with some requirement
 ```
-On windows 11: (Tutorial can be searched at google)
+On windows 11: (Installation tutorial can be searched at google)
 1. Windows Subsystem Linux 
 2. Ubuntu 20.04.4 LTS
 ```
@@ -28,3 +28,4 @@ On windows 11: (Tutorial can be searched at google)
 10. sudo apt-get install build-essential libltdl-dev libffi-dev libssl-dev python-dev
 11. sudo pip3 install --upgrade cython
 ```
+3. Create apk using buildoze with plugged android device

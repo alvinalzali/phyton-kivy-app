@@ -1,15 +1,19 @@
 # This app created to test phyton code on kivy launcher
+```
+This Repo take source on [DENICZ](https://www.youtube.com/watch?v=pzsvN3fuBA0)
+```
 ### Lib Requirements :
 1. kivy 2.1.0
 2. kivy_deps.gstreamer 0.3.3 (optional)
 3. python 3.9.12 (if higher stable then its better)
-4. 
 
 ### This app can be deployed to apk with some requirement
 ```
 On windows 11: (Installation tutorial can be searched at google)
 1. Windows Subsystem Linux 
 2. Ubuntu 20.04.4 LTS
+3. Installed ADB for windows and add it into env path
+
 ```
 
 ### Lib on Ubuntu Command-line
@@ -28,4 +32,10 @@ On windows 11: (Installation tutorial can be searched at google)
 10. sudo apt-get install build-essential libltdl-dev libffi-dev libssl-dev python-dev
 11. sudo pip3 install --upgrade cython
 ```
-3. Create apk using buildoze with plugged android device
+3. Create apk using buildozer with plugged android device
+```
+### Install Buildozer on ubuntu
+git clone https://github.com/kivy/buildozer.git
+1. cd buildozer
+2. sudo python3 setup.py install
+```

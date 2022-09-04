@@ -14,17 +14,35 @@ class MyGridLayout(GridLayout):
 
         # set columns
         self.cols = 1
+        self.row_force_default = True
+        self.row_default_height = 120
+        self.colu_force_default = True
+        self.colu_default_width = 120
 
         # Create second layout
-        self.top_grid = GridLayout()
+        self.top_grid = GridLayout(
+            row_force_default=True,
+            row_default_height=40,
+            col_force_default=True,
+            col_default_width=200
+        )
         self.top_grid.cols = 2
 
 
         # Add Widgets
 
-        self.top_grid.add_widget(Label(text="Name: "))
+        self.top_grid.add_widget(Label(text="Name: ",
+            size_hint_y=None,
+            height=50,
+            size_hint_x=None,
+            width=200)
+        )
         # Add Input Box
-        self.name = TextInput(multiline=True)
+        self.name = TextInput(multiline=True,
+                              size_hint_y=None,
+                              height=50,
+                              size_hint_x=None,
+                              width=200)
         self.top_grid.add_widget(self.name)
 
         self.top_grid.add_widget(Label(text="Favorite Pizza: "))
@@ -43,7 +61,13 @@ class MyGridLayout(GridLayout):
 
 
         # Create Submit Button
-        self.submit = Button(text="Submit", font_size=29)
+        self.submit = Button(text="Submit", 
+            font_size=29,
+            size_hint_y=None,
+            height=50,
+            size_hint_x=None,
+            width=200)
+
         # Bind Button
         self.submit.bind(on_press=self.press)
         self.add_widget(self.submit)

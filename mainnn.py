@@ -172,7 +172,7 @@ class ShowcaseApp(App):
                         value.text.lower().replace(' ', '_'))()
             self.content.add_widget(w)
         except Exception, e:
-            print e
+        print e
 
     def on_pause(self):
         return True

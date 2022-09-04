@@ -1,3 +1,6 @@
+import kivy
+
+
 from kivy.lang import Builder
 from plyer import gps
 from kivy.app import App
@@ -8,14 +11,18 @@ from kivy.utils import platform
 kv = '''
 BoxLayout:
     orientation: 'vertical'
+
     Label:
         text: app.gps_location
+
     Label:
         text: app.gps_status
+
     BoxLayout:
         size_hint_y: None
         height: '48dp'
         padding: '4dp'
+
         ToggleButton:
             text: 'Start' if self.state == 'normal' else 'Stop'
             on_state:
@@ -34,6 +41,7 @@ class GpsTest(App):
         Since API 23, Android requires permission to be requested at runtime.
         This function requests permission and handles the response via a
         callback.
+
         The request will produce a popup if permissions have not already been
         been granted, otherwise it will do nothing.
         """
@@ -97,4 +105,3 @@ class GpsTest(App):
 
 if __name__ == '__main__':
     GpsTest().run()
-    

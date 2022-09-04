@@ -8,7 +8,7 @@
 3. python 3.9.12 (if higher stable then its better)
 
 ### This app can be deployed to apk with some requirement
-```
+``` 
 On windows 11: (Installation tutorial can be searched at google)
 1. Windows Subsystem Linux 
 2. Ubuntu 20.04.4 LTS
@@ -31,6 +31,8 @@ On windows 11: (Installation tutorial can be searched at google)
 9. sudo apt-get install autoconf
 10. sudo apt-get install build-essential libltdl-dev libffi-dev libssl-dev python-dev
 11. sudo pip3 install --upgrade cython
+12. sudo pip3 install kivy_garden.graph
+13. sudo pip3 install kivy_garden.mapview
 ```
 3. Create apk using buildozer with plugged android device
 ```

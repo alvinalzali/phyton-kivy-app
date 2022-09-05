@@ -1,3 +1,5 @@
+#: import utils kivy.utils
+
 <MyGridLayout>
 
     name: name
@@ -33,5 +35,11 @@
             text: "Submit"
             font_size: 32
             on_press: root.press()
+            #RGB - A
+            background_normal: ""
+            #background_color: (1,0,0,0.5) #RGB
+            background_color: utils.get_color_from_hex("#FF00DF") #Hex
+
+
             
 

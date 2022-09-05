@@ -3,6 +3,17 @@ import kivy
 from kivy.app import App
 from kivy.uix.widget import Widget
 from kivy.properties import ObjectProperty
+from kivy.lang import Builder
+from kivy.uix.label import Label
+
+# Designate Our .kv design file (compatible with dir path)
+#method 1 with diff file
+Builder.load_file('color.kv') 
+
+# method 2 with string 
+# Builder.load_string('''  use design here ''') 
+
+
 
 class MyGridLayout(Widget):
     # initialize infinite keywords
@@ -26,9 +37,9 @@ class MyGridLayout(Widget):
         self.pizza.text = ""
         self.color.text = ""
 
-class MyApp(App):
+class AwesomeApp(App):
     def build(self):
         return MyGridLayout()
 
 if __name__ == '__main__' :
-    MyApp().run()
+    AwesomeApp().run()
